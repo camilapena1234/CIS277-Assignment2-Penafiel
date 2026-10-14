@@ -24,7 +24,7 @@ public:
     bool receive(std::size_t id, const unsigned char* bytes,
                  std::size_t length);
 
-    bool processNext(int& id, std::vector<unsigned char>& bytes);
+    bool processNext(std::size_t& id, std::vector<unsigned char>& bytes);
 
     std::size_t pending() const;
 

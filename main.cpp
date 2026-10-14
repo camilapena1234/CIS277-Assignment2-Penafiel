@@ -27,7 +27,7 @@ int main() {
     std::cout << "Packets waiting: "
               << packets.pending() << '\n';
 
-    int id;
+    std::size_t id;
     std::vector<unsigned char> bytes;
 
     if (packets.processNext(id, bytes)) {

@@ -33,7 +33,7 @@ bool PacketQueue::receive(std::size_t id, const unsigned char* bytes,
     return true;
 }
 
-bool PacketQueue::processNext(int& id, std::vector<unsigned char>& bytes) {
+bool PacketQueue::processNext(std::size_t& id, std::vector<unsigned char>& bytes) {
     PacketDescriptor packet;
 
     if (!queue_.dequeue(packet)) {
